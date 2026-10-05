@@ -258,3 +258,33 @@ a:hover {
 .exit-content p:not(.small-text) {
     color: #777;
 }
+
+
+.trap-page {
+    background: #090909;
+}
+
+.trap-content {
+    min-height: 100vh;
+    padding: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trap-content h1 {
+    font-size: 12vw;
+    line-height: 0.8;
+    letter-spacing: -0.08em;
+    max-width: 1100px;
+    margin: 40px 0;
+}
+
+.trap-message {
+    color: #777;
+    font-size: 1.1rem;
+}
+
+.trap-content .navigation {
+    margin-top: 80px;
+}

@@ -105,25 +105,67 @@ a:hover {
 .about-page {
     min-height: 85vh;
     padding: 8vw 10vw;
+    background: #161616;
+}
+
+.about-page .small-text {
+    color: #ffcc66;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    transform: rotate(-2deg);
+    display: inline-block;
 }
 
 .about-page h1 {
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 6vw;
     line-height: 0.95;
     letter-spacing: -0.05em;
     margin: 40px 0 80px;
+    color: #f5f5f5;
 }
 
 .about-text {
     max-width: 600px;
-    font-size: 1.1rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.15rem;
     line-height: 1.7;
+}
+
+.about-text p:nth-child(1) {
+    color: #8fd3ff;
+}
+
+.about-text p:nth-child(2) {
+    color: #ff9f9f;
+    margin-left: 40px;
 }
 
 .strange-text {
     margin-top: 60px;
+    margin-left: 80px;
+    font-family: "Courier New", monospace;
     font-size: 1.5rem;
+    font-weight: bold;
     letter-spacing: 0.05em;
+    color: #b8ff8f;
+    transform: rotate(2deg);
+}
+
+.about-page .navigation {
+    margin-top: 90px;
+}
+
+.about-page .navigation a {
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #ffcc66;
+    transition: 0.2s ease;
+}
+
+.about-page .navigation a:hover {
+    color: #ff7eb6;
+    letter-spacing: 0.12em;
 }
 
 

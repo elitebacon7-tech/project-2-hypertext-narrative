@@ -261,30 +261,120 @@ a:hover {
 
 
 .trap-page {
-    background: #090909;
+    background: #000;
+    overflow-x: hidden;
 }
 
 .trap-content {
     min-height: 100vh;
-    padding: 10vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 6vw;
+    position: relative;
 }
+
+
+
+.trap-content .small-text {
+    font-size: 1rem;
+    letter-spacing: 0.4em;
+    transform: rotate(-3deg);
+    margin-left: 5vw;
+}
+
+
 
 .trap-content h1 {
-    font-size: 12vw;
-    line-height: 0.8;
+    font-family: Impact, Haettenschweiler, "Arial Black", sans-serif;
+    font-size: 13vw;
+    line-height: 0.72;
     letter-spacing: -0.08em;
     max-width: 1100px;
-    margin: 40px 0;
+    margin: 8vh 0 12vh;
+
+    transform: rotate(-2deg);
 }
+
+
+
+.trap-content h1::first-line {
+    margin-left: 5vw;
+}
+
+
 
 .trap-message {
-    color: #777;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+
+    margin-left: 35vw;
+
+    transform: rotate(4deg);
 }
 
+
+
 .trap-content .navigation {
-    margin-top: 80px;
+    margin-top: 12vh;
+    margin-left: 8vw;
+    gap: 35px;
+}
+
+
+
+.trap-content .navigation a {
+    font-family: "Courier New", monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+
+    transition: all 0.15s ease;
+}
+
+
+
+.trap-content .navigation a:first-child {
+    transform: rotate(-4deg);
+}
+
+
+
+.trap-content .navigation a:last-child {
+    margin-left: 12vw;
+}
+
+
+
+.trap-content .navigation a:hover {
+    text-decoration: none;
+    letter-spacing: 0.35em;
+    margin-left: 25px;
+    transform: rotate(3deg);
+}
+
+
+
+@media (max-width: 700px) {
+
+    .trap-content {
+        padding: 8vw;
+    }
+
+    .trap-content h1 {
+        font-size: 20vw;
+        line-height: 0.75;
+        margin-top: 10vh;
+    }
+
+    .trap-message {
+        margin-left: 10vw;
+        font-size: 1rem;
+    }
+
+    .trap-content .navigation {
+        margin-left: 0;
+    }
+
+    .trap-content .navigation a:last-child {
+        margin-left: 5vw;
+    }
 }
